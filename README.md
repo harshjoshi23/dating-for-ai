@@ -19,3 +19,7 @@ Sites hosting uses .openai/hosting.json. Vercel-compatible static output is in d
 ## Current scope
 
 The founder will provide individual product plans. No roadmap, business model, pricing or publication results are invented. Read ATTRIBUTION.md and docs/founding-note.md.
+
+## Three.js visual experience
+
+The landing page uses vendored Three.js 0.187.0 (MIT; license in dist/vendor) with interactive real-time geometry. Animation pauses on request and respects reduced-motion preferences. A static SVG remains available when WebGL fails. The visual controls change artwork only, not model behavior.
