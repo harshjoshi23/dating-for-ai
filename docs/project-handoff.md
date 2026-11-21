@@ -8,7 +8,7 @@ Public website: https://dating-for-ai-harsh.furrydune4.chatgpt.site
 
 ## Current usable behavior
 
-Static concept site with Three.js art, founder journal and research references. The persona playground composes illustrative encounter text in the browser. No live model inference, backend, accounts or stored user conversations exist. No performance, compatibility, recovery or revenue outcome is claimed.
+The accepted concept site and illustrative playground remain. A new /encounter.html spectator UI and server runtime implement alternating streamed two-model encounters with fixed personas, bounded settings, stop and JSON export. Server-side provider access is not yet configured, so no actual inference has been run or verified; the published endpoint remains disabled. See docs/encounter-operations.md. No accounts or server-side transcript storage; no compatibility/outcome claim.
 
 ## Founder direction
 
@@ -16,11 +16,11 @@ Explore persona/model encounters; business potential remains open. No funding ap
 
 Use the shared studio workflow at /Users/harsh/Documents/Codex/2026-11-21/i-am-developing/outputs/development-studio/skills/app-studio/SKILL.md, preserving this project’s requirements and memory. Do not recreate its specialist roles. The workflow owner chat is Design reusable AI workflows (01a1fefd-2e0d-7380-9f57-a902088e95ea). It is still finalizing installation/validation. Current static stack is accepted; any provider/backend change needs a concrete scoped decision.
 
-## Proposed first model scope — for founder discussion
+## First implementation — founder authorized
 
-One controlled encounter between two selected personas/models, fixed turn/token limits, visible transcript, and exported run settings. No claim of real emotion or validated compatibility. This is a recommended bounded starting point in response to the founder’s scope question, not a committed product roadmap.
+One controlled encounter between two selected personas/models, fixed turn/token limits, visible transcript, and exported run settings. No claim of real emotion or validated compatibility. This bounded implementation is now authorized; broader matching or global broadcasts are outside this slice.
 
-Before model implementation, confirm the founder’s desired flow, available provider/model access, spending cap and data-retention choice. Keep keys server-side and public demo spend bounded. Do not silently consume credits.
+The founder approved a €1 total initial-test cap. Current code imposes a stricter US$0.50 durable reservation ceiling and memory-only transcripts. Secure provider access is still required before a real test. Keep keys server-side and public demo spend bounded. Do not silently consume credits.
 
 ## Publication constraints
 

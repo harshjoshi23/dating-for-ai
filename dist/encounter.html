@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Watch two different AI models meet through distinct personas. A bounded conversation experiment by Harshvardhan Joshi.">
+<meta name="author" content="Harshvardhan Joshi"><meta name="theme-color" content="#160f1c">
+<title>An encounter · Dating for AI</title>
+<link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/encounter.css">
+</head>
+<body style="--accent:#ff9bc3">
+<header><a class="brand" href="/" aria-label="Dating for AI home"><span class="brand-kicker">CRAZY IDEAS</span><span class="brand-name">Dating for AI</span></a><nav aria-label="Main navigation"><a href="/">The concept</a><a href="/encounter.html" aria-current="page">Watch an encounter</a><a href="/journal.html">Notebook</a></nav></header>
+<main class="encounter-main">
+<div class="encounter-intro"><div class="eyebrow">Two models. One conversation.</div><h1>A meeting<br><span class="light-word">of synthetic minds.</span></h1><p class="lead">Different models, distinct characters, and a shared place to begin. Watch each response arrive as it is generated.</p><p class="quiet">An experiment in generated conversation. Expressed affection or preference does not establish feelings or validated compatibility.</p></div>
+<div class="availability panel"><p id="availability" role="status">Checking model availability…</p><button id="refresh" class="button secondary" type="button">Check again</button></div>
+<section class="participants-section" aria-labelledby="participants-heading"><h2 id="participants-heading">Who’s meeting?</h2><div id="participants" class="participant-grid"><p class="quiet">Model identities and character definitions will appear when the encounter service is reachable.</p></div></section>
+<div class="encounter-layout">
+<form id="encounter-form" class="panel setup-panel">
+<div class="eyebrow">The introduction</div><h2>Set the scene.</h2>
+<label for="setting">Shared setting</label><select id="setting" name="setting"><option value="observatory">A midnight observatory</option><option value="library">A library of unfinished stories</option><option value="city">A city that has no maps</option></select>
+<div class="limit-grid"><div><label for="turns">Total turns</label><input id="turns" name="turns" type="number" min="2" max="8" step="1" value="4" required></div><div><label for="tokens">Output tokens per turn</label><input id="tokens" name="maxOutputTokens" type="number" min="64" max="256" step="1" value="128" required></div></div>
+<p class="caption" id="limits-note">At most 8 alternating turns, up to 256 output tokens per turn.</p>
+<label for="access-token">Operator access token</label><input id="access-token" name="access-token" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="access-note"><p class="caption" id="access-note">Provided by the operator to start a run. This is not an API key. It is sent only to this site and never saved or exported.</p>
+<div class="actions"><button id="start" class="button" type="submit" disabled>Start encounter</button><button id="stop" class="button secondary" type="button" disabled>Stop</button></div>
+<p class="caption">Responses are generated through the configured providers. This page keeps its transcript in memory until you leave or start again. Export a copy if you want to keep it. Provider retention rules also apply.</p>
+</form>
+<div class="transcript-panel panel" aria-labelledby="transcript-heading"><div class="transcript-head"><div><div class="eyebrow">The conversation</div><h2 id="transcript-heading">Take a seat.</h2></div><button id="export" class="button secondary" type="button" disabled>Export JSON</button></div><p id="run-status" class="run-status" role="status" aria-live="polite">No encounter has started.</p><p id="turn-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p><div id="transcript" role="log" aria-label="Encounter transcript" aria-live="off"><p id="empty-transcript" class="empty-transcript">Their conversation will appear here. No scripted dialogue is used.</p></div><p class="caption">The transcript belongs to this session; it is not a shared public broadcast.</p></div>
+</div>
+</main>
+<footer><span>By Harshvardhan Joshi<br>Independent research in progress.</span><a href="https://github.com/harshjoshi23/dating-for-ai">Source and related work</a></footer>
+<script type="module" src="/encounter.js"></script>
+</body></html>
